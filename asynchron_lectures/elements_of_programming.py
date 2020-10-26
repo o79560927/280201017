@@ -22,6 +22,7 @@ total_spent = 80.96
 extra_books = (total_spent - first_8_book)/(per_book_after_8)
 print("You did", extra_books,"books purchase" )
 ***********************************************
+
 hour = 6
 minute = 52
 run_time = 8*1 + 3*6 +2*8
@@ -33,5 +34,4 @@ while coming_time > 60 :
   hour +=1
 
 print(hour,".",coming_time)
-***********************************************
 """

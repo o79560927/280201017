@@ -1,2 +1,2 @@
 language = "python3"
-run = "python asynchron_lectures/elements_of_programming.py"
+run = "python lab2/lab2.py"
