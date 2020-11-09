@@ -61,8 +61,17 @@ for i in range(b):
   i =i+1
 print(d)
 '''
+
 a = int(input())
 d = 1
 for i in range(a):
   d *= a-i
 print(d)
+
+e = a //  5
+if e >= 5:
+ e = e + e // 5 
+ if e >= 5:
+   e = e + e // 5 
+
+print(e)
