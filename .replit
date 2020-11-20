@@ -1,4 +1,4 @@
 language = "python3"
-run = "python lab5/lab5.py"
+run = "python asynchron_lectures/iteration_structure.py"
 
 
