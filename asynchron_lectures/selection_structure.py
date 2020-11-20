@@ -1,4 +1,6 @@
+#Example 1
 
+"""
 input_values = input("Please enter three values separeted with commas :")
 x1,x2,x3 = input_values.split(',')
 x1 = int(x1)
@@ -11,9 +13,11 @@ elif x2 > x1 and x2 > x3:
   print("the largest value is :",x2)
 else:
   print("the largest value is :",x3)
+"""
 
+#Example 2
 
-
+"""
 input_values = input("Please enter three values separeted with commas :")
 x1,x2,x3 = input_values.split(',')
 x1 = int(x1)
@@ -26,4 +30,4 @@ if x2 > max_num:
 if x3 > max_num:
   max_num = x3
 print(max_num)
-
+"""
