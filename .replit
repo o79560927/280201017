@@ -1,4 +1,4 @@
 language = "python3"
-run = "python ceng113/ceng113.py"
+run = "python lab6/lab6.py"
 
 
