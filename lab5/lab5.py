@@ -57,19 +57,3 @@ for i in range(number-2):
   b = c
   print(c)
 """
-
-string = str(input("Please enter your name : "))
-for i in string.upper():
-  print(i)
-liste = []
-a = True
-while a == True:
-  ask = str(input("Please enter any string ('quit' to quit)"))
-  if ask == "quit":
-    a = False
-  liste.append(ask)
-liste.sort()
-for k in liste:
-  if k == "quit":
-    
-  print(k)
