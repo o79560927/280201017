@@ -6,7 +6,7 @@ def selection_sort(liste):
                 min_index = k
         (liste[i], liste[min_index]) = (liste[min_index], liste[i])
 
-
+#
 numbers = [16, 342, 343, 2, 34]
 selection_sort(numbers)
 print(numbers)
