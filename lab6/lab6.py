@@ -65,7 +65,6 @@ for x in range(input_number) :
 n = int(input("Matrix number: "))
 string = ''
 sum_list = []
-
 for i in range(n):
     for j in range(n):
         number = int(input("Input number: "))

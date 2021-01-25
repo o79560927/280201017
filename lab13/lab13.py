@@ -1,3 +1,4 @@
+#example 1
 def selection_sort(liste):
     for i in range(len(liste)):
         min_index = i
@@ -6,13 +7,12 @@ def selection_sort(liste):
                 min_index = k
         (liste[i], liste[min_index]) = (liste[min_index], liste[i])
 
-#
+
 numbers = [16, 342, 343, 2, 34]
 selection_sort(numbers)
 print(numbers)
 
-
-
+#example 2
 def binary_search(arr, low, high, x):
     # Check base case
     if high >= low:
@@ -40,3 +40,5 @@ if result != -1:
     print("Element is present at index", str(result))
 else:
     print("Element is not present in array")
+#example 3
+##
