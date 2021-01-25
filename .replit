@@ -1,4 +1,4 @@
 language = "python3"
-run = "python lab9/lab9.py"
+run = "python lab13/lab13.py"
 
 
