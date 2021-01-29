@@ -106,13 +106,14 @@ class DNA:
     return DNA_dict
   
   def calculate_complement(self):
-    reversed_DNA = self.DNA.reverse()
-    for i in range(len(reversed_DNA)):
-      if   reversed_DNA[i] == "A":  reversed_DNA[i] = "T"
-      elif reversed_DNA[i] == "T":  reversed_DNA[i] = "A"
-      elif reversed_DNA[i] == "C":  reversed_DNA[i] = "G"
-      elif reversed_DNA[i] == "G":  reversed_DNA[i] = "C"
-    self.DNA = reversed_DNA
+    reversed_DNA = self.DNA[::-1]
+    reversed_DNA = reversed_DNA.replace("A","t")
+    reversed_DNA = reversed_DNA.replace("T","A")
+    reversed_DNA = reversed_DNA.replace("t","T")
+    reversed_DNA = reversed_DNA.replace("C","g")
+    reversed_DNA = reversed_DNA.replace("G","C")
+    reversed_DNA = reversed_DNA.replace("g","G")    
+    return reversed_DNA
 
   def count_point_mutations(self,DNA):
     mutation_number = 0
@@ -126,11 +127,14 @@ class DNA:
     def find_(DNA,self_DNA):
       if self_DNA.find(DNA) == -1:
         return liste
-      elif:
+      else:
         liste.append(self_DNA.find(DNA))
-        return find(DNA, self_DNA[self_DNA.find(DNA):])
-    find_motif(DNA,self.DNA)
+        return find_(DNA, self_DNA[self_DNA.find(DNA)+1:])
+    find_(DNA,self.DNA)
     return liste
 
 DNA1 = DNA("ACCTAGACCGTACCTA")
+print(DNA1.count_nucleotides())
+print(DNA1.calculate_complement())
+print(DNA1.count_point_mutations("ACCGATACCGTACCTT"))
 print(DNA1.find_motif("ACC"))
