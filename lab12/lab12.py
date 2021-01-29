@@ -94,5 +94,43 @@ print(cd_project.avg_salary())
 
 #example3
 class DNA:
-  def __init__(self,DNA):
+  def __init__(self,DNA): # DNA be like "ACCGTAGCGTAGCGTACAA"
     self.DNA = DNA
+  
+  def count_nucleotides(self):
+    A = self.DNA.count("A")
+    G = self.DNA.count("G")
+    C = self.DNA.count("C")
+    T = self.DNA.count("T")
+    DNA_dict = {"A" : A, "G" : G, "C" : C, "T" : T}
+    return DNA_dict
+  
+  def calculate_complement(self):
+    reversed_DNA = self.DNA.reverse()
+    for i in range(len(reversed_DNA)):
+      if   reversed_DNA[i] == "A":  reversed_DNA[i] = "T"
+      elif reversed_DNA[i] == "T":  reversed_DNA[i] = "A"
+      elif reversed_DNA[i] == "C":  reversed_DNA[i] = "G"
+      elif reversed_DNA[i] == "G":  reversed_DNA[i] = "C"
+    self.DNA = reversed_DNA
+
+  def count_point_mutations(self,DNA):
+    mutation_number = 0
+    for i in range(len(DNA)):
+      if DNA[i] != self.DNA[i]:
+        mutation_number += 1
+    return mutation_number
+  
+  def find_motif(self,DNA):
+    liste = []
+    def find_(DNA,self_DNA):
+      if self_DNA.find(DNA) == -1:
+        return liste
+      elif:
+        liste.append(self_DNA.find(DNA))
+        return find(DNA, self_DNA[self_DNA.find(DNA):])
+    find_motif(DNA,self.DNA)
+    return liste
+
+DNA1 = DNA("ACCTAGACCGTACCTA")
+print(DNA1.find_motif("ACC"))
